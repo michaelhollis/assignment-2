@@ -46,8 +46,13 @@ namespace assignment_2
                 double Height = double.Parse(textBox2.Text);
                 double width = double.Parse(textbox3.Text);
                 //read Surface area and Volume from labels 
-                double Surface area = Force * Cos(Angle);
+                double Surfacearea = 2.0 * (Length * Height + Length * width + Height * width)
+                //run the code between these brackets
+                label1.Text = "Surface area = " + Surfacearea;
+                label2.Text = "Volume = " + Volume;
+
             }
+
         }
     }
 }
