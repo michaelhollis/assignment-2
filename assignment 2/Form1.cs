@@ -83,5 +83,46 @@ namespace assignment_2
 
             }
         }
+
+        private void TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            try
+
+            {  //read Radius and height from textboxes
+                double Radius = double.Parse(TextBox6.Text);
+                double Height = double.Parse(TextBox5.Text);
+                //read Surface area and volume from labels 
+                double surfacearea = Math.PI * Radius * (Radius + Math.Sqrt(Height * Height + Radius * Radius));
+                double volume = 1.0 / 3.0 * Math.PI * Radius * Radius * Height;
+                //run the code between these brackets
+                label5.Text = "surface area = " + surfacearea;
+                label6.Text = "volume = " + volume;
+            }
+            catch
+            {
+                MessageBox.Show("error on input");
+            }
+
+        }
     }
 }
