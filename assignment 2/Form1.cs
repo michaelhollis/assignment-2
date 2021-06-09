@@ -21,7 +21,6 @@ namespace assignment_2
         {
 
         }
-
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -109,8 +108,8 @@ namespace assignment_2
             try
 
             {  //read Radius and height from textboxes
-                double Radius = double.Parse(TextBox6.Text);
-                double Height = double.Parse(TextBox5.Text);
+                double Radius = double.Parse(textBox7.Text);
+                double Height = double.Parse(textBox5.Text);
                 //read Surface area and volume from labels 
                 double surfacearea = Math.PI * Radius * (Radius + Math.Sqrt(Height * Height + Radius * Radius));
                 double volume = 1.0 / 3.0 * Math.PI * Radius * Radius * Height;
