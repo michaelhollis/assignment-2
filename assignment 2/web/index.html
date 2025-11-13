@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Explore Local Favorites</h1>
+      <p>Tap any card to see what people are saying.</p>
+    </header>
+
+    <main class="grid" aria-label="Business directory">
+      <article class="business-card" data-business-id="bella-bistro" tabindex="0">
+        <h2>Bella Bistro</h2>
+        <p class="category">Restaurant</p>
+        <p class="teaser">Italian comfort food with a modern twist.</p>
+      </article>
+      <article class="business-card" data-business-id="green-garden" tabindex="0">
+        <h2>Green Garden</h2>
+        <p class="category">Plant Shop</p>
+        <p class="teaser">Rare indoor plants and expert care tips.</p>
+      </article>
+      <article class="business-card" data-business-id="sparkle-cleaners" tabindex="0">
+        <h2>Sparkle Cleaners</h2>
+        <p class="category">Home Services</p>
+        <p class="teaser">Eco-friendly home and office cleaning.</p>
+      </article>
+      <article class="business-card" data-business-id="sunrise-fitness" tabindex="0">
+        <h2>Sunrise Fitness</h2>
+        <p class="category">Wellness Studio</p>
+        <p class="teaser">Personal training and community classes.</p>
+      </article>
+    </main>
+
+    <section
+      id="review-bot"
+      class="bot-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-live="polite"
+      aria-labelledby="bot-heading"
+      hidden
+    >
+      <div class="bot-window" tabindex="-1">
+        <header class="bot-header">
+          <div>
+            <h2 id="bot-heading">Review Assistant</h2>
+            <p id="bot-subheading" class="bot-subheading"></p>
+          </div>
+          <button type="button" class="bot-close" aria-label="Close review assistant">×</button>
+        </header>
+        <div class="bot-body">
+          <p class="bot-summary" id="bot-summary"></p>
+          <dl class="bot-stats">
+            <div>
+              <dt>Average rating</dt>
+              <dd id="bot-average"></dd>
+            </div>
+            <div>
+              <dt>Total reviews</dt>
+              <dd id="bot-count"></dd>
+            </div>
+          </dl>
+          <ul class="bot-reviews" id="bot-reviews" aria-label="Recent reviews"></ul>
+        </div>
+        <footer class="bot-footer">
+          <button type="button" class="bot-close secondary">Back to list</button>
+        </footer>
+      </div>
+    </section>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
