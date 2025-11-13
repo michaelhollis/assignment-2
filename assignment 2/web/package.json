@@ -1,0 +1,13 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Interactive review assistant page",
+  "main": "script.js",
+  "scripts": {
+    "test": "node tests/reviewBot.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
